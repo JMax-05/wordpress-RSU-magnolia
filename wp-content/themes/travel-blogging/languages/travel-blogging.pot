@@ -1,0 +1,574 @@
+# Copyright (C) 2026 Titan Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Travel Blogging 4.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/travel-blogging\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-21T15:08:40+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: travel-blogging\n"
+
+#. Theme Name of the theme
+#: style.css
+#: inc/customizer.php:23
+msgid "Travel Blogging"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+#: about-theme/about-theme.php:8
+msgid "https://www.titanthemes.net/products/free-travel-wordpress-theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "The Travel Blogging WordPress Theme is a versatile and feature-rich template designed specifically for travel enthusiasts, photographers, and writers keen on sharing their voyage writing with a global audience. Offering a seamless user experience, this theme boasts a sleek and modern layout that adapts beautifully across devices, ensuring an optimal viewing experience on desktops, tablets, or smartphones. With its extensive customization options, bloggers can tailor colors, fonts, and layouts to achieve a personalized look. Built for visual storytelling, the Travel Blogging theme supports high-resolution images and videos, ideal for showcasing compelling travel stories, scenic landscapes, and cultural experiences. Integrated social sharing features make it easy to distribute content across platforms like Facebook, Instagram, and Twitter, enhancing community engagement and reach. Fully optimized for SEO, it features fast loading speeds and an SEO-friendly structure to help your blog rank higher in search results. The theme also includes interactive maps, comment sections, multimedia support, and custom widgets to foster reader interaction. Additional elements, such as email subscription options, content management tools, and user-friendly navigation, enhance the browsing experience. While perfect for travel bloggers, this theme is also suitable for various industries, including adventure tours, event planning, photography, hospitality, and food blogging, making it an excellent choice for travel influencers and agencies. With regular updates and ongoing support, the Travel Blogging theme offers a reliable platform for inspiring exploration and building connections in the digital world. Whether you’re sharing travel tips, crafting destination guides, or posting stunning photo journals, it provides the flexibility and professional tools needed to create an engaging, high-performance blog."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Titan Themes"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.titanthemes.net/"
+msgstr ""
+
+#: about-theme/about-theme.php:9
+msgid "https://wordpress.org/support/theme/travel-blogging/"
+msgstr ""
+
+#: about-theme/about-theme.php:10
+msgid "https://wordpress.org/support/theme/travel-blogging/reviews/#new-post"
+msgstr ""
+
+#: about-theme/about-theme.php:11
+msgid "https://www.titanthemes.net/products/coaching-center-wordpress-theme"
+msgstr ""
+
+#: about-theme/about-theme.php:12
+msgid "https://preview.titanthemes.net/documentation/travel-blogging/"
+msgstr ""
+
+#: about-theme/about-theme.php:13
+msgid "https://preview.titanthemes.net/travel-blogging"
+msgstr ""
+
+#: about-theme/about-theme.php:14
+msgid "https://www.titanthemes.net/products/wordpress-theme-bundle"
+msgstr ""
+
+#: about-theme/about-theme.php:92
+msgid "Welcome! Thank you for choosing %1$s."
+msgstr ""
+
+#: about-theme/about-theme.php:93
+msgid "Thank you for choosing this theme. Use the Get Started guide to quickly set up and personalize your website."
+msgstr ""
+
+#: about-theme/about-theme.php:95
+msgid "Get started with %s"
+msgstr ""
+
+#: about-theme/about-theme.php:96
+msgid "GO FOR PREMIUM"
+msgstr ""
+
+#: about-theme/about-theme.php:97
+msgid "GET BUNDLE"
+msgstr ""
+
+#: about-theme/about-theme.php:154
+msgid "UPGRADE TO PREMIUM"
+msgstr ""
+
+#: about-theme/about-theme.php:162
+msgid "PREMIUM DEMONSTRATION"
+msgstr ""
+
+#: about-theme/about-theme.php:163
+msgid "Effortlessly create and customize your website by arranging text, images, and other elements using the Gutenberg editor, making web design easy and accessible for all skill levels."
+msgstr ""
+
+#: about-theme/about-theme.php:165
+msgid "DEMONSTRATION"
+msgstr ""
+
+#: about-theme/about-theme.php:169
+#: about-theme/about-theme.php:172
+msgid "REVIEWS"
+msgstr ""
+
+#: about-theme/about-theme.php:170
+msgid "We would be happy to hear your thoughts and value your evaluation."
+msgstr ""
+
+#: about-theme/about-theme.php:176
+msgid "24/7 SUPPORT"
+msgstr ""
+
+#: about-theme/about-theme.php:177
+msgid "Please do not hesitate to contact us at support if you need help installing our lite theme. We are prepared to assist you!"
+msgstr ""
+
+#: about-theme/about-theme.php:179
+msgid "SUPPORT"
+msgstr ""
+
+#: about-theme/about-theme.php:183
+msgid "THEME INSTRUCTION"
+msgstr ""
+
+#: about-theme/about-theme.php:184
+msgid "If you need assistance configuring and setting up the theme, our tutorial is available. A fast and simple method for setting up the theme."
+msgstr ""
+
+#: about-theme/about-theme.php:186
+msgid "DOCUMENTATION"
+msgstr ""
+
+#: about-theme/about-theme.php:194
+msgid "Get All Themes In Single Pack"
+msgstr ""
+
+#: about-theme/about-theme.php:195
+msgid "From customization to optimization, this bundle gives you the flexibility to create stunning websites."
+msgstr ""
+
+#: about-theme/about-theme.php:197
+msgid "BUY THEME BUNDLE"
+msgstr ""
+
+#: about-theme/about-theme.php:201
+msgid "logo"
+msgstr ""
+
+#: about-theme/about-theme.php:207
+msgid "The premium version of this theme will be available for you to enhance or unlock our premium features."
+msgstr ""
+
+#: about-theme/about-theme.php:212
+#: inc/customizer.php:24
+msgid "GO TO PREMIUM"
+msgstr ""
+
+#: about-theme/about-theme.php:217
+msgid "PREMIUM DEMO"
+msgstr ""
+
+#: patterns/banner-block.php
+msgctxt "Pattern title"
+msgid "Banner Block"
+msgstr ""
+
+#: patterns/banner-block.php:16
+#: patterns/banner-block.php:42
+#: patterns/banner-block.php:52
+#: patterns/banner-block.php:62
+msgid "Travel"
+msgstr ""
+
+#: patterns/banner-block.php:21
+msgid "Never Stop Exploring"
+msgstr ""
+
+#: patterns/banner-block.php:25
+msgid "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+msgstr ""
+
+#: patterns/banner-block.php:32
+msgid "Know More"
+msgstr ""
+
+#: patterns/banner-block.php:47
+msgid "Changing Your Destination With Hiking"
+msgstr ""
+
+#: patterns/banner-block.php:57
+msgid "The Things You Dont Need to see in London"
+msgstr ""
+
+#: patterns/banner-block.php:67
+msgid "Is It Worth to Ride to West &amp; North Canada?"
+msgstr ""
+
+#: patterns/footer-default.php
+msgctxt "Pattern title"
+msgid "Default Footer"
+msgstr ""
+
+#: patterns/footer-default.php:22
+msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+msgstr ""
+
+#: patterns/footer-default.php:44
+msgid "Quick Links"
+msgstr ""
+
+#: patterns/footer-default.php:49
+msgid "About Us"
+msgstr ""
+
+#: patterns/footer-default.php:53
+msgid "Policy"
+msgstr ""
+
+#: patterns/footer-default.php:57
+msgid "Terms and Conditions"
+msgstr ""
+
+#: patterns/footer-default.php:61
+msgid "Career"
+msgstr ""
+
+#: patterns/footer-default.php:65
+msgid "Blog"
+msgstr ""
+
+#: patterns/footer-default.php:69
+#: patterns/footer-default.php:108
+msgid "Contact Us"
+msgstr ""
+
+#: patterns/footer-default.php:76
+msgid "Services"
+msgstr ""
+
+#: patterns/footer-default.php:81
+msgid "Knowledge Base"
+msgstr ""
+
+#: patterns/footer-default.php:85
+msgid "Contact Support"
+msgstr ""
+
+#: patterns/footer-default.php:89
+msgid "Privacy Policy"
+msgstr ""
+
+#: patterns/footer-default.php:93
+msgid "Blog Articles"
+msgstr ""
+
+#: patterns/footer-default.php:97
+msgid "Brand Assets"
+msgstr ""
+
+#: patterns/footer-default.php:101
+msgid "Brand Guidelines"
+msgstr ""
+
+#: patterns/footer-default.php:114
+msgid "14th Street, Caltech, New Jersey, Alabama"
+msgstr ""
+
+#: patterns/footer-default.php:120
+msgid "Monday - Friday"
+msgstr ""
+
+#: patterns/footer-default.php:124
+msgid "8:00 a.m. - 5:00 p.m."
+msgstr ""
+
+#: patterns/footer-default.php:130
+msgid "email@example.com"
+msgstr ""
+
+#: patterns/footer-default.php:147
+msgid "Travel WordPress Theme"
+msgstr ""
+
+#: patterns/footer-default.php:147
+msgid " | Proudly powered By"
+msgstr ""
+
+#: patterns/footer-default.php:147
+msgid "WordPress"
+msgstr ""
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "Hidden 404"
+msgstr ""
+
+#: patterns/hidden-404.php:13
+msgctxt "Error code for a webpage that is not found."
+msgid "404"
+msgstr ""
+
+#: patterns/hidden-404.php:19
+msgctxt "Message to convey that a webpage could not be found"
+msgid "This page could not be found."
+msgstr ""
+
+#: patterns/hidden-404.php:22
+#: patterns/hidden-no-results.php:14
+msgctxt "label"
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-404.php:22
+#: patterns/hidden-no-results.php:14
+msgctxt "placeholder for search field"
+msgid "Search..."
+msgstr ""
+
+#: patterns/hidden-404.php:22
+#: patterns/hidden-no-results.php:14
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-comments.php
+msgctxt "Pattern title"
+msgid "Hidden Comments"
+msgstr ""
+
+#: patterns/hidden-comments.php:13
+msgctxt "Title of comments section"
+msgid "Comments"
+msgstr ""
+
+#: patterns/hidden-no-results.php
+msgctxt "Pattern title"
+msgid "Hidden No Results Content"
+msgstr ""
+
+#: patterns/hidden-no-results.php:10
+msgctxt "Message explaining that there are no results returned from a search"
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: patterns/news-block.php
+msgctxt "Pattern title"
+msgid "News Block"
+msgstr ""
+
+#: patterns/news-block.php:35
+msgid "The Mountains"
+msgstr ""
+
+#: patterns/news-block.php:40
+msgid "More Post"
+msgstr ""
+
+#: patterns/post-meta.php
+msgctxt "Pattern title"
+msgid "Post Meta"
+msgstr ""
+
+#: patterns/post-meta.php:28
+msgctxt "Verb to explain the publication status of a post"
+msgid "Posted"
+msgstr ""
+
+#: patterns/post-meta.php:36
+msgctxt "Preposition to show the relationship between the post and its categories"
+msgid "in"
+msgstr ""
+
+#: patterns/post-meta.php:48
+msgctxt "Preposition to show the relationship between the post and its author"
+msgid "by"
+msgstr ""
+
+#: patterns/post-meta.php:64
+msgctxt "Label for a list of post tags"
+msgid "Tags:"
+msgstr ""
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr ""
+
+#: patterns/tiblog.php
+msgctxt "Pattern title"
+msgid "Product"
+msgstr ""
+
+#: styles/blue.json
+msgctxt "Style variation name"
+msgid "Blue"
+msgstr ""
+
+#: styles/blue.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Base"
+msgstr ""
+
+#: styles/blue.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr ""
+
+#: styles/blue.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: styles/blue.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: styles/blue.json
+#: styles/orange.json
+#: styles/purple.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr ""
+
+#: styles/orange.json
+msgctxt "Style variation name"
+msgid "Orange"
+msgstr ""
+
+#: styles/purple.json
+msgctxt "Style variation name"
+msgid "Purple"
+msgstr ""
+
+#: styles/yellow.json
+msgctxt "Style variation name"
+msgid "Yellow"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page With No Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Grid Layout (Archive posts)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Blog Page (Sidebar on Right)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Blog Page (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Page (Sidebar on Right)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Page (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "404"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "DM Sans"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "IBM Plex Mono"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System Font"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Source Serif Pro"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Comments"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Post Meta"
+msgstr ""

@@ -1,0 +1,101 @@
+/*
+Theme Name: Travel Blogging
+Theme URI: https://www.titanthemes.net/products/free-travel-wordpress-theme
+Author: Titan Themes
+Author URI: https://www.titanthemes.net/
+Description: The Travel Blogging WordPress Theme is a versatile and feature-rich template designed specifically for travel enthusiasts, photographers, and writers keen on sharing their voyage writing with a global audience. Offering a seamless user experience, this theme boasts a sleek and modern layout that adapts beautifully across devices, ensuring an optimal viewing experience on desktops, tablets, or smartphones. With its extensive customization options, bloggers can tailor colors, fonts, and layouts to achieve a personalized look. Built for visual storytelling, the Travel Blogging theme supports high-resolution images and videos, ideal for showcasing compelling travel stories, scenic landscapes, and cultural experiences. Integrated social sharing features make it easy to distribute content across platforms like Facebook, Instagram, and Twitter, enhancing community engagement and reach. Fully optimized for SEO, it features fast loading speeds and an SEO-friendly structure to help your blog rank higher in search results. The theme also includes interactive maps, comment sections, multimedia support, and custom widgets to foster reader interaction. Additional elements, such as email subscription options, content management tools, and user-friendly navigation, enhance the browsing experience. While perfect for travel bloggers, this theme is also suitable for various industries, including adventure tours, event planning, photography, hospitality, and food blogging, making it an excellent choice for travel influencers and agencies. With regular updates and ongoing support, the Travel Blogging theme offers a reliable platform for inspiring exploration and building connections in the digital world. Whether you’re sharing travel tips, crafting destination guides, or posting stunning photo journals, it provides the flexibility and professional tools needed to create an engaging, high-performance blog.
+Requires at least: 6.1
+Tested up to: 6.9
+Requires PHP: 7.2
+Version: 4.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: travel-blogging
+Tags: grid-layout, one-column, two-columns, left-sidebar, right-sidebar, wide-blocks, block-patterns, custom-background, custom-colors, custom-menu, custom-logo, editor-style, block-styles, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, style-variations, theme-options, threaded-comments, translation-ready, blog, photography, entertainment
+*/
+
+.home .header-area {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    border-bottom: solid 1px #fff;
+}
+
+.home .header-area .wp-block-site-title a,.home .header-area .wp-block-navigation-link a {
+    color: #fff;
+}
+
+.wp-site-blocks{
+	padding: 0 !important;
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  .head-logo h1 a {
+    font-size: 22px;
+}
+.topheader-area{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.wp-block-social-links{
+  margin-top: 5px !important;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 800px) {
+	.header-area {
+		text-align: center;
+	}
+  .single-image figure{
+    width: 100% !important;
+  }
+	.home .header-area .wp-block-site-title a,.home .header-area .wp-block-navigation-link a {
+	    color: #000;
+	}
+
+	.home .header-area {
+	    position: static;
+	    border-bottom: none;
+	}
+
+	.header-area .wp-container-core-buttons-layout-1.wp-container-core-buttons-layout-1 {
+		justify-content: center;
+	}
+
+	.topheader-area .has-text-align-right{
+		text-align: center;
+	}
+	
+	.topheader-area .wp-block-social-links{
+	    justify-content: center;
+	}
+}
+.wc-block-mini-cart.wp-block-woocommerce-mini-cart,.wp-block-woocommerce-customer-account {
+  display: none;
+}
+
+/* Blog Section */
+.news-section .news-box .wp-block-post-excerpt__excerpt{
+  color: #000000;
+}
+.news-heading-box .news-small-title{
+  width: max-content;
+}
+.news-section .news-heading-box{
+  gap: 0;
+}
+.news-section .news-box .wp-block-post:hover .wp-block-post-title a{
+  color: var(--wp--preset--color--primary);
+}
+.news-section .news-heading-box{
+  gap: 0;
+}
+.recent-btn a {
+  background: var(--wp--preset--color--primary);
+  padding: 10px 12px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.recent-btn a:hover{
+  background: #000;
+}
