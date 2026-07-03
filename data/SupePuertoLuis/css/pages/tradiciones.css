@@ -1,0 +1,260 @@
+/* ═══════════════════════════════════════
+   TRADICIONES — Professional Timeline
+   Uses var(--primary) for accent color
+═══════════════════════════════════════ */
+
+.traditions {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  color: var(--dark);
+}
+
+/* ── Header ── */
+.traditions-header {
+  max-width: 760px;
+  margin: 0 auto 5rem;
+  text-align: center;
+}
+
+.traditions-header .section-tag {
+  display: inline-block;
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  color: var(--primary);
+  padding: 6px 18px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.traditions-header h2 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  color: var(--dark);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.traditions-subtitle {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ── Timeline container ── */
+.festivities-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  counter-reset: event-counter;
+}
+
+.festivities-timeline::before {
+  content: '';
+  position: absolute;
+  left: clamp(24px, 4vw, 40px);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--primary) 0%,
+    var(--primary) 85%,
+    transparent 100%
+  );
+}
+
+/* ── Individual event ── */
+.timeline-event {
+  position: relative;
+  display: grid;
+  grid-template-columns: clamp(68px, 10vw, 106px) 1fr;
+  gap: clamp(0.75rem, 2vw, 1.75rem);
+  margin-bottom: clamp(2rem, 5vh, 3.5rem);
+  counter-increment: event-counter;
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.timeline-event.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-event:nth-child(2) { transition-delay: 0.08s; }
+.timeline-event:nth-child(3) { transition-delay: 0.16s; }
+.timeline-event:nth-child(4) { transition-delay: 0.24s; }
+.timeline-event:nth-child(5) { transition-delay: 0.32s; }
+.timeline-event:nth-child(6) { transition-delay: 0.40s; }
+.timeline-event:nth-child(7) { transition-delay: 0.48s; }
+
+/* ── Marker (left column) ── */
+.timeline-event__marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 2px;
+  z-index: 1;
+}
+
+.timeline-event__dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--primary);
+  box-shadow:
+    0 0 0 5px color-mix(in srgb, var(--primary) 14%, transparent),
+    0 4px 14px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.timeline-event__dot::after {
+  content: counter(event-counter, decimal-leading-zero);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+.timeline-event:hover .timeline-event__dot {
+  background: var(--primary);
+  transform: scale(1.12);
+  box-shadow:
+    0 0 0 6px color-mix(in srgb, var(--primary) 20%, transparent),
+    0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-event:hover .timeline-event__dot::after {
+  color: #fff;
+}
+
+.timeline-event__date {
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* ── Card (right column) ── */
+.timeline-event__card {
+  display: grid;
+  grid-template-columns: clamp(130px, 22%, 220px) 1fr;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-event__card:hover {
+  transform: translateY(-4px) translateX(3px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.timeline-event__image {
+  overflow: hidden;
+  margin: 0;
+}
+
+.timeline-event__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s ease;
+}
+
+.timeline-event__card:hover .timeline-event__image img {
+  transform: scale(1.08);
+}
+
+/* Body */
+.timeline-event__body {
+  padding: clamp(1.1rem, 2.5vw, 1.75rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 4px solid var(--primary);
+}
+
+.timeline-event__body h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: var(--dark);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-event__body .line {
+  width: 48px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 2px;
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+}
+
+.timeline-event__body p {
+  color: #5a6474;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+/* ── Responsive ── */
+@media (prefers-reduced-motion: reduce) {
+  .timeline-event {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .festivities-timeline::before { left: 18px; }
+
+  .timeline-event {
+    grid-template-columns: 48px 1fr;
+    gap: 0.75rem;
+  }
+
+  .timeline-event__dot {
+    width: 34px;
+    height: 34px;
+  }
+
+  .timeline-event__dot::after { font-size: 0.65rem; }
+
+  .timeline-event__card {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-event__image {
+    height: 170px;
+  }
+
+  .timeline-event__body {
+    border-left: none;
+    border-top: 4px solid var(--primary);
+  }
+
+  .traditions-subtitle { padding: 0 1rem; }
+}

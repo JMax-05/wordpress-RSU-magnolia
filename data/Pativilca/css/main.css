@@ -1,0 +1,24 @@
+@import url("./base/variables.css");
+@import url("./base/reset.css");
+@import url("./base/typography.css");
+
+@import url("./layout/grid.css");
+@import url("./layout/sections.css");
+@import url("./layout/header.css");
+@import url("./layout/footer.css");
+
+@import url("./components/buttons.css");
+
+@import url("./pages/inicio.css");
+@import url("./pages/historia.css");
+@import url("./pages/turismo.css");
+@import url("./pages/gastronomia.css");
+@import url("./pages/tradiciones.css");
+@import url("./pages/mitos.css");
+@import url("./pages/servicios.css");
+@import url("./pages/galeria.css");
+@import url("./pages/contacto.css");
+
+@import url("./utilities/animations.css");
+@import url("./utilities/helpers.css");
+@import url("./utilities/responsive.css");

@@ -1,0 +1,29 @@
+﻿<section class="contact section" id="contacto" aria-labelledby="contactTitle">
+  <div class="container">
+    <header class="contact-header">
+      <span class="section-tag">Visitanos</span>
+      <h2 id="contactTitle">Contacto</h2>
+    </header>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Como llegar?</h3>
+        <div class="contact-info-item"><div class="contact-info-item__icon">📍</div><div class="contact-info-item__text"><strong>Ubicacion</strong><span>Paramonga, Barranca, Lima – Perú</span></div></div>
+        <div class="contact-info-item"><div class="contact-info-item__icon">🚗</div><div class="contact-info-item__text"><strong>Desde Lima</strong><span>209 km por la Panamericana Norte. Aprox. 3h 10min en auto.</span></div></div>
+        <div class="contact-info-item"><div class="contact-info-item__icon">🚌</div><div class="contact-info-item__text"><strong>En bus</strong><span>Buses interprovinciales desde el Terminal Norte de Lima hacia Barranca, luego colectivo o combi hasta Paramonga.</span></div></div>
+        <div class="contact-info-item"><div class="contact-info-item__icon">☀️</div><div class="contact-info-item__text"><strong>Mejor epoca</strong><span>Abril–octubre para la Fortaleza. Fiestas de San Jerónimo en septiembre.</span></div></div>
+      </div>
+      <div id="map" role="application" aria-label="Mapa de Paramonga, Peru"></div>
+    </div>
+    <div class="contact-form-wrap">
+      <h3>Escribenos</h3>
+      <form class="contact-form" aria-label="Formulario de contacto" novalidate>
+        <div class="form-field"><label for="contact-name">Nombre</label><input type="text" id="contact-name" name="name" placeholder="Tu nombre" autocomplete="name"></div>
+        <div class="form-field"><label for="contact-email">Correo electronico</label><input type="email" id="contact-email" name="email" placeholder="tu@correo.com" autocomplete="email"></div>
+        <div class="form-field"><label for="contact-topic">Tema</label><select id="contact-topic" name="topic"><option value="">Selecciona un tema</option><option value="turismo">Turismo</option><option value="gastronomia">Gastronomia</option><option value="servicios">Servicios</option><option value="otro">Otro</option></select></div>
+        <div class="form-field"><label for="contact-phone">Telefono (opcional)</label><input type="tel" id="contact-phone" name="phone" placeholder="+51 999 999 999" autocomplete="tel"></div>
+        <div class="form-field full"><label for="contact-message">Mensaje</label><textarea id="contact-message" name="message" placeholder="En que podemos ayudarte?"></textarea></div>
+        <button type="submit" class="btn-primary">Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,218 @@
+.myths { overflow: hidden; }
+
+.myths-subtitle {
+  margin-top: 1rem;
+  text-align: center;
+  max-width: 700px;
+  margin-inline: auto;
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+
+.myths-accordion-wrap {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 3rem auto 0;
+}
+
+.myths-accordion {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  min-height: 560px;
+}
+
+.myth-card {
+  isolation: isolate;
+  position: relative;
+  flex: 1;
+  min-width: 78px;
+  overflow: hidden;
+  border: 1px solid rgba(20,184,196,0.2);
+  border-radius: 28px;
+  background: #07111d;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+  cursor: pointer;
+  transition: flex 0.65s cubic-bezier(0.2,0.8,0.2,1),
+              transform 0.35s ease,
+              border-color 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.myth-card::before,
+.myth-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.myth-card::before {
+  background: linear-gradient(180deg, rgba(7,17,29,0.1) 0%, rgba(7,17,29,0.68) 58%, rgba(7,17,29,0.92) 100%);
+}
+
+.myth-card::after {
+  opacity: 0;
+  background: radial-gradient(circle at 22% 25%, rgba(34,211,238,0.28), transparent 36%),
+              linear-gradient(90deg, rgba(7,17,29,0.72), rgba(7,17,29,0.2));
+  transition: opacity 0.45s ease;
+}
+
+.myth-card:hover { transform: translateY(-6px); border-color: rgba(34,211,238,0.55); }
+
+.myth-card.is-active {
+  flex: 4.8;
+  border-color: rgba(34,211,238,0.65);
+  box-shadow: 0 28px 80px rgba(0,0,0,0.46), 0 0 35px rgba(20,184,196,0.16);
+}
+
+.myth-card.is-active::after { opacity: 1; }
+
+.myth-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  transform: scale(1.04);
+  filter: saturate(0.9) brightness(0.82);
+  transition: transform 0.75s ease, filter 0.45s ease;
+}
+
+.myth-card.is-active .myth-card__image {
+  transform: scale(1);
+  filter: saturate(1.08) brightness(0.95);
+}
+
+.myth-card__trigger {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 100%;
+  padding: 1.6rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(7,17,29,0.18) 42%, rgba(7,17,29,0.86) 100%);
+  color: var(--white);
+  cursor: pointer;
+  text-align: left;
+}
+
+.myth-card__trigger:focus-visible {
+  outline: 3px solid var(--primary-light);
+  outline-offset: -8px;
+}
+
+.myth-card__eyebrow {
+  position: absolute;
+  top: 1.4rem;
+  left: 1.4rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 999px;
+  background: rgba(15,23,32,0.48);
+  color: #d7faff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.myth-card__title {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  max-height: 78%;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-shadow: 0 12px 28px rgba(0,0,0,0.72);
+  transform: translateX(-50%) rotate(180deg);
+  writing-mode: vertical-rl;
+  transition: all 0.45s ease;
+}
+
+.myth-card__content {
+  position: absolute;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  left: clamp(1rem, 3vw, 2rem);
+  z-index: 4;
+  max-width: 680px;
+  padding: clamp(1rem, 2vw, 1.35rem);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 22px;
+  background: rgba(7,17,29,0.66);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.32);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(24px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.myth-card__content p {
+  color: #e2e8f0;
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  line-height: 1.7;
+}
+
+.myth-card.is-active .myth-card__eyebrow { opacity: 1; transform: translateY(0); }
+
+.myth-card.is-active .myth-card__title {
+  top: clamp(4.2rem, 7vw, 5.5rem);
+  bottom: auto;
+  left: clamp(1.2rem, 3vw, 2rem);
+  max-width: min(680px, calc(100% - 4rem));
+  max-height: none;
+  font-size: clamp(2rem, 4vw, 3.65rem);
+  line-height: 0.95;
+  transform: none;
+  writing-mode: horizontal-tb;
+}
+
+.myth-card.is-active .myth-card__content {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.18s;
+}
+
+@media (max-width: 900px) {
+  .myths-accordion { min-height: 520px; gap: 0.75rem; }
+  .myth-card { min-width: 64px; }
+  .myth-card.is-active { flex: 4.2; }
+}
+
+@media (max-width: 768px) {
+  .myths-accordion-wrap { width: min(620px, calc(100% - 1.5rem)); margin-top: 2.2rem; }
+  .myths-accordion { flex-direction: column; min-height: auto; }
+  .myth-card { flex: none; min-width: 0; min-height: 92px; margin: 0; }
+  .myth-card:hover { transform: none; }
+  .myth-card.is-active { flex: none; min-height: 470px; }
+  .myth-card__trigger { padding: 1.2rem; }
+  .myth-card__eyebrow { top: 1rem; left: 1rem; font-size: 0.65rem; }
+  .myth-card__title,
+  .myth-card.is-active .myth-card__title {
+    right: 1rem; bottom: 1rem; left: 1rem;
+    max-width: calc(100% - 2rem);
+    font-size: clamp(1.25rem, 6vw, 2rem);
+    transform: none;
+    writing-mode: horizontal-tb;
+  }
+  .myth-card.is-active .myth-card__title { top: 3.7rem; bottom: auto; }
+  .myth-card__content { right: 1rem; bottom: 1rem; left: 1rem; max-height: 210px; overflow-y: auto; }
+}
+
+@media (max-width: 480px) {
+  .myth-card.is-active { min-height: 520px; }
+  .myth-card__content { max-height: 255px; }
+}
